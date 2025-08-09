@@ -170,7 +170,7 @@ export const GradientBackground = ({
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="text-gray-300 hover:text-white py-2 rounded-md font-medium tracking-wide hover:bg-white/10 px-12
-                  font-mono cursor-pointer text-gradient font-bold sm:text-lg md:text-2xl"
+                  font-mono cursor-pointer text-gradient  sm:text-lg md:text-2xl"
                 >
                   Contact
                 </motion.span>
