@@ -11,16 +11,8 @@ export default function Home() {
       <div className="z-10 absolute text-center text-2xl font-semibold tracking-tighter whitespace-pre-wrap text-black md:text-7xl dark:text-white">
         <NameShowcase/>
       </div>
-     
       <GradientBackground />
-      
-      
-          {/* <h1 className="text-white items-center flex flex-center">Praveen.org</h1> */}
-          
-       
-     
     </div>
-   
    </>
   );
 }
