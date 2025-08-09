@@ -1,10 +1,9 @@
 "use client";
 
+import { easeInOut, motion } from "framer-motion";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-
-// Update the import path below to the correct relative path for your project structure.
-// For example, if utils.ts is in 'lib/utils.ts' at the project root, use:
 import { cn } from "../../lib/utils";
 
 export const GradientBackground = ({
@@ -142,6 +141,46 @@ export const GradientBackground = ({
         containerClassName
       )}
     >
+      {/* Updated Navbar with proper Link components */}
+      <motion.nav
+        initial={{ opacity: 0, y: -100, scale: 0.8 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{
+          duration: 3.5,
+          ease: easeInOut,
+        }}
+        className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md"
+      >
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-center h-16">
+            <div className="flex space-x-8">
+              <Link href="/projects" passHref>
+                <motion.span
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="text-gray-300 hover:text-white py-2 rounded-md font-medium tracking-wide hover:bg-white/10 px-12
+                  font-mono cursor-pointer text-gradient sm:text-lg md:text-2xl"
+                >
+                  Projects
+                </motion.span>
+              </Link>
+
+              <Link href="/contact" passHref>
+                <motion.span
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="text-gray-300 hover:text-white py-2 rounded-md font-medium tracking-wide hover:bg-white/10 px-12
+                  font-mono cursor-pointer text-gradient font-bold sm:text-lg md:text-2xl"
+                >
+                  Contact
+                </motion.span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </motion.nav>
+
+      {/* Existing SVG and content */}
       <svg className="hidden">
         <defs>
           <filter id="blurMe">
