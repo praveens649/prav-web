@@ -2,7 +2,6 @@ import Image from "next/image";
 import { GradientBackground } from "../../components/nurui/gradient-background";
 import NameShowcase from "../../components/nurui/show-name";
 import { GithubIcon } from "lucide-react";
-import Navbar from "../../components/nurui/navbar";
 export default function Home() {
   return (
    <>

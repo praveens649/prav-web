@@ -1,8 +1,9 @@
 import React from 'react'
+import PortfolioGrid from './_components/project-section'
 
 const page = () => {
   return (
-    <div className='text-amber-400' >Page</div>
+<PortfolioGrid/>
   )
 }
 
