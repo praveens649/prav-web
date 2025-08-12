@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Card } from "@/components/ui/card"
+import { useState } from "react";
+import { Card } from "@/components/ui/card";
 
 const projects = [
   {
@@ -40,11 +40,10 @@ const projects = [
     image: "/futuristic-ai-dashboard.png",
     span: "col-span-2",
   },
-  
-]
+];
 
 export default function PortfolioGrid() {
-  const [hoveredProject, setHoveredProject] = useState<number | null>(null)
+  const [hoveredProject, setHoveredProject] = useState<number | null>(null);
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -57,7 +56,8 @@ export default function PortfolioGrid() {
             <span className="text-gray-400">WORKS</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl leading-relaxed">
-            Design is more than visuals — it's the story your brand tells. Explore my selected works.
+            Design is more than visuals — it's the story your brand tells.
+            Explore my selected works.
           </p>
         </div>
       </section>
@@ -100,12 +100,23 @@ export default function PortfolioGrid() {
 
                   {/* Project Info */}
                   <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
-                    <h3 className="text-2xl font-bold mb-2 text-white">{project.title}</h3>
-                    <p className="text-gray-300 mb-3 leading-relaxed">{project.subtitle}</p>
+                    <h3 className="text-2xl font-bold mb-2 text-white">
+                      {project.title}
+                    </h3>
+                    <p className="text-gray-300 mb-3 leading-relaxed">
+                      {project.subtitle}
+                    </p>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-gray-400">{project.year}</span>
+                      <span className="text-sm text-gray-400">
+                        {project.year}
+                      </span>
                       <div className="w-8 h-8 rounded-full border border-cyan-400/50 flex items-center justify-center group-hover:bg-cyan-400/20 transition-colors duration-300">
-                        <svg className="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg
+                          className="w-4 h-4 text-cyan-400"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
                           <path
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -126,5 +137,5 @@ export default function PortfolioGrid() {
         </div>
       </section>
     </div>
-  )
+  );
 }
