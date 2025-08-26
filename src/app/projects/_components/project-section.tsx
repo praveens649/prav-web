@@ -47,7 +47,7 @@ export default function PortfolioGrid() {
 
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Hero Section */}
+      
       <section className="pt-22 pb-20 px-6">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
@@ -62,7 +62,7 @@ export default function PortfolioGrid() {
         </div>
       </section>
 
-      {/* Projects Grid */}
+     
       <section className="px-6 pb-20">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-fr">
